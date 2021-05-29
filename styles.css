@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+background-color: hsl(218deg 24% 87%);
+padding: 1.5rem;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%
+}
+
+.info {
+    padding: 1.2rem;
+background: white;
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+}
+
+.info-title {
+    color: hsl(179, 62%, 43%);
+}
+
+.info-message {
+    margin: .8rem 0;
+    color: hsl(71, 73%, 54%);
+}
+
+.subscription-container {
+    background: hsl(179, 42%, 46%);
+    padding: 1.6em;
+}
+
+.subscription-title {
+    color: #fff;
+}
+
+.subscription-price {
+    margin: .7rem 0;
+}
+
+.subscription-price-amount {
+    color: #fff;
+    font-size: 2em;
+}
+
+.subscription-price-dollors {
+    color: hsl(204, 43%, 93%);
+    opacity: .7;
+}
+
+.subscription-info {
+    color: hsl(204, 43%, 93%);
+}
+
+.subscription-btn {
+    width: 100%;
+    color: #fff;
+    background: hsl(71, 73%, 54%);
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.6s);
+    border: none;
+    border-radius: 4px;
+    padding: 1.5em;
+    font-weight: 700;
+    font-weight: bold;
+}
+
+.why-us {
+    padding: 1.6em;
+    background: hsl(179, 62%, 43%);
+border-bottom-left-radius: 8px;
+border-bottom-right-radius: 8px;
+}
+
+.why-us-card {
+    width: 70%;
+    color: #fff;
+}
+
+.why-us-title {
+    font-size: 1.4rem;
+}
+
+.why-us-info {
+    color: hsl(204, 43%, 93%);
+    opacity: .7;
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+@media (min-width: 900px) and (max-width: 1440px) {
+    main {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 90px;
+        margin-bottom: 50px;
+        box-shadow: 1px 1px 10px rgba(214, 210, 210, 0.8);
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "info info" "subscription whyus";
+    }
+    .info {
+        grid-area: info;
+        padding-bottom: 50px;
+    }
+    .subscription-container {
+        grid-area: subscription;
+    }
+    .why-us {
+        grid-area: whyus;
+    }
+}
